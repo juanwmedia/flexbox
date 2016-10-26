@@ -21,6 +21,8 @@ body {
 .contenedor {
 	border: 20px solid white;
 	display: flex;
+	flex-direction: column;
+	height: 100vh;
 }
 
 div[class*="item-"] {
