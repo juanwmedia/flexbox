@@ -21,9 +21,10 @@ body {
 .contenedor {
 	border: 20px solid white;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	height: 100vh;
 	font-size: 20px;
+	justify-content: center;
 }
 
 div[class*="item-"] {
@@ -31,27 +32,10 @@ div[class*="item-"] {
 	padding: 10px;
 	text-align: center;
 	border: 2px solid gray;
-	flex-grow: 1;
+	/*flex-grow: 1;*/
 }
 
 div[class*="item-"]:nth-child(odd) {
 	background-color: black;
 	color: white;
-}
-
-@media (max-width: 768px) {
-	div[class*="item-"]:nth-child(5) {
-		background-color: red;
-		order: -2;
-	}	
-}
-
-div[class*="item-"]:nth-child(7) {
-	background-color: green;
-	order: -3;
-}
-
-div[class*="item-"]:nth-child(8) {
-	background-color: blue;
-	order: 1;
 }
