@@ -23,7 +23,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	height: 100vh;
-	flex-wrap: wrap;
+	font-size: 20px;
 }
 
 div[class*="item-"] {
@@ -31,12 +31,27 @@ div[class*="item-"] {
 	padding: 10px;
 	text-align: center;
 	border: 2px solid gray;
-/*	flex-grow: 1;*/
-	width: 300px;
-	/*height: 100px;*/
+	flex-grow: 1;
 }
 
 div[class*="item-"]:nth-child(odd) {
 	background-color: black;
 	color: white;
+}
+
+@media (max-width: 768px) {
+	div[class*="item-"]:nth-child(5) {
+		background-color: red;
+		order: -2;
+	}	
+}
+
+div[class*="item-"]:nth-child(7) {
+	background-color: green;
+	order: -3;
+}
+
+div[class*="item-"]:nth-child(8) {
+	background-color: blue;
+	order: 1;
 }
