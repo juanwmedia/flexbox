@@ -21,9 +21,10 @@ body {
 .contenedor {
 	border: 20px solid white;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	height: 100vh;
 	font-size: 20px;
+	align-items: center;
 	justify-content: center;
 }
 
