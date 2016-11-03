@@ -25,7 +25,7 @@ body {
 	height: 100vh;
 	font-size: 20px;
 	align-items: center;
-	justify-content: center;
+/*	justify-content: center;*/
 }
 
 div[class*="item-"] {
@@ -33,10 +33,16 @@ div[class*="item-"] {
 	padding: 10px;
 	text-align: center;
 	border: 2px solid gray;
-	/*flex-grow: 1;*/
+	flex-grow: 1;
 }
 
 div[class*="item-"]:nth-child(odd) {
 	background-color: black;
 	color: white;
+}
+
+div[class*="item-"]:nth-child(6) {
+	background-color: aqua;
+	color: blue;
+	align-self: stretch;
 }
