@@ -21,11 +21,9 @@ body {
 .contenedor {
 	border: 20px solid white;
 	display: flex;
-	flex-direction: row;
 	height: 100vh;
 	font-size: 20px;
 	align-items: center;
-/*	justify-content: center;*/
 }
 
 div[class*="item-"] {
@@ -33,7 +31,7 @@ div[class*="item-"] {
 	padding: 10px;
 	text-align: center;
 	border: 2px solid gray;
-	flex-grow: 1;
+	flex: 1;
 }
 
 div[class*="item-"]:nth-child(odd) {
@@ -44,5 +42,5 @@ div[class*="item-"]:nth-child(odd) {
 div[class*="item-"]:nth-child(6) {
 	background-color: aqua;
 	color: blue;
-	align-self: stretch;
+	flex: 3;
 }
