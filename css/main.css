@@ -31,7 +31,6 @@ div[class*="item-"] {
 	padding: 10px;
 	text-align: center;
 	border: 2px solid gray;
-	flex: 1;
 }
 
 div[class*="item-"]:nth-child(odd) {
@@ -39,8 +38,21 @@ div[class*="item-"]:nth-child(odd) {
 	color: white;
 }
 
-div[class*="item-"]:nth-child(6) {
-	background-color: aqua;
-	color: blue;
-	flex: 3;
+div[class*="item-"]:nth-child(1) {
+/*	flex-basis: 200px;
+	flex-grow: 1;*/
+	flex: 1 1 200px;
+}
+
+div[class*="item-"]:nth-child(2) {
+	/*flex-basis: 200px;
+	flex-grow: 10;
+	flex-shrink: 10;*/
+	flex: 10 10 200px;
+}
+
+div[class*="item-"]:nth-child(3) {
+	/*flex-basis: 200px;
+	flex-grow: 1;*/
+	flex: 1 1 200px;
 }
