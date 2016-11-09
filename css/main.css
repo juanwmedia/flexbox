@@ -24,6 +24,8 @@ body {
 	height: 100vh;
 	font-size: 20px;
 	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 div[class*="item-"] {
@@ -31,6 +33,8 @@ div[class*="item-"] {
 	padding: 10px;
 	text-align: center;
 	border: 2px solid gray;
+	flex-basis: 500px;
+	/*flex-grow: 1;*/
 }
 
 div[class*="item-"]:nth-child(odd) {
@@ -38,21 +42,7 @@ div[class*="item-"]:nth-child(odd) {
 	color: white;
 }
 
-div[class*="item-"]:nth-child(1) {
-/*	flex-basis: 200px;
-	flex-grow: 1;*/
-	flex: 1 1 200px;
-}
-
-div[class*="item-"]:nth-child(2) {
-	/*flex-basis: 200px;
-	flex-grow: 10;
-	flex-shrink: 10;*/
-	flex: 10 10 200px;
-}
-
-div[class*="item-"]:nth-child(3) {
-	/*flex-basis: 200px;
-	flex-grow: 1;*/
-	flex: 1 1 200px;
+div[class*="item-"]:nth-child(5) {
+	background-color: aqua;
+	flex-grow: 4;
 }
